@@ -209,5 +209,3 @@ players = game_hash[:home][:players].merge(game_hash[:away][:players])
 players.max_by{|player, stats| stats.fetch(:points)}[0]
 
 end
-
-
