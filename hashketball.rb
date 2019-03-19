@@ -232,3 +232,12 @@ else
 end
 
 end
+
+def player_with_longest_name
+
+players = game_hash[:home][:players].merge(game_hash[:away][:players])
+
+players.max_by(1){|player, stats| player.length}[0][0]
+
+
+end
